@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.app-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+
+.title {
+  font-size: 2rem;
+  color: #333;
+  font-family: 'Arial', sans-serif;
+}
+
+.movie-card .poster {
+  background-color: #003355;
+  padding: 20px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+
+.movie-card .title {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+
+.movie-card .rating {
+  font-size: 12px;
+  font-weight: normal;
+}

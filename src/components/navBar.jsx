@@ -6,8 +6,8 @@ const NavBar = () => {
     <nav className="navbar">
       <h1 className="navbar-title">Movie App</h1>
       <ul className="navbar-links">
-        <li><Link to="/">Home</Link></li>
-        <li><Link to="/details">Details</Link></li>
+        <li><Link to="/">로그인</Link></li>
+        <li><Link to="/details">회원가입</Link></li>
       </ul>
     </nav>
   );

@@ -6,14 +6,14 @@ import axios from 'axios'
 
 const MovieDetail = () => {
   const { id } = useParams();
-  const [movie, setMovie] = useState([])
+  const [movie, setMovie] = useState([null])
 
   const options = {
     method: 'GET',
     url: `https://api.themoviedb.org/3/movie/${id}?language=ko-KR`,
     headers: {
       accept: 'application/json',
-      Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIyYTNlZTFjNDg2YzM2MzRlYjY0Nzc3YWJjZjRlNDVhZiIsIm5iZiI6MTczMzc1MTkwNy4xOTkwMDAxLCJzdWIiOiI2NzU2ZjQ2MzhiMmNjMjc4OGIxMWRkNGYiLCJzY29wZXMiOlsiYXBpX3JlYWQiXSwidmVyc2lvbiI6MX0.yG1MZU4N-4GnkR6ASm-6AWGCNiVdr5bc0HsJUnd53F4'
+      Authorization: `Bearer ${import.meta.env.VITE_TMdb_API_KEY}`
     }
   };   
  
